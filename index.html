@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#"><i class="fa fa-cube" aria-hidden="true"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mx-1">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i>
+                        Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Courses
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#first">Web Development</a>
+                        <a class="dropdown-item" href="#first">Web Designing</a>
+                        <a class="dropdown-item" href="#second">Machine Learning</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#second">Android Development</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop">
+                        Review Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0 mx-1">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"
+                    list="suggestion">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <div class="form-inline my-2 my-lg-0">
+                <a href="sign-up.html">
+                    <button type="button" class="btn btn-danger mx-1">Sign Up</button>
+                </a>
+                <a href="log-in.html">
+                    <button type="button" class="btn btn-warning mx-1">Log In</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"><i class="fa fa-commenting" aria-hidden="true"></i>
+                        Comment Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Select your experience</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Very Good</option>
+                                <option>Good</option>
+                                <option>Decent</option>
+                                <option>Worst</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Tell us why</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sliding Screen -->
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade my-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="CONTENT/7.jpg" class=" d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="CONTENT/21.jpg" class=" d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="CONTENT/6.jpg" class=" d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- alert -->
+    <div class="alert alert-warning alert-dismissible fade show mx-4" role="alert">
+        <strong>Information: </strong> About wil be available soon.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <!-- content -->
+    <div class="container text-center my-3">
+        <h2>Popular Courses</h2>
+    </div>
+    <!-- content1 -->
+    <div id="first">
+        <div class="container my-4">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-danger">BACKEND DEVELOPMENT</strong>
+                            <h3 class="mb-0">Backend</h3>
+                            <div class="mb-1 text-muted">Aug 05</div>
+                            <p class="card-text mb-auto">Back end development refers to the server side of an
+                                application
+                                and everything that..</p>
+                            <a href="https://www.guru99.com/what-is-backend-developer.html"
+                                class="stretched-link">Continue
+                                reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="250" height="250" src="/CONTENT/3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-success">WEB DESIGNING</strong>
+                            <h3 class="mb-0">Front</h3>
+                            <div class="mb-1 text-muted">Aug 05</div>
+                            <p class="mb-auto">1.Register your domain name. Your domain name should reflect your
+                                products or
+                                services..<br>
+                            </p>
+                            <a href="https://websitesetup.org/" target="_blank" class="stretched-link">Continue
+                                reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="250" height="250" src="/CONTENT/12.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content2 -->
+    <div id="second">
+        <div class="container">
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">ANDROID DEVELOPMENT</strong>
+                            <h3 class="mb-0">Android</h3>
+                            <div class="mb-1 text-muted">Aug 07</div>
+                            <p class="card-text mb-auto">Android software development is the process by which
+                                applications
+                                are created for devices..</p>
+                            <a href="https://www.tutorialspoint.com/android/android_studio.htm"
+                                class="stretched-link">Continue
+                                reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="250" height="250" src="/CONTENT/16.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div
+                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-warning">ARTIFICIAL INTELLIGENCE</strong>
+                            <h3 class="mb-0">Machine Learning</h3>
+                            <div class="mb-1 text-muted">Aug 07</div>
+                            <p class="mb-auto">Artificial intelligence systems are critical for companies that wish to
+                                extract value from data..<br>
+                            </p>
+                            <a href="https://websitesetup.org/" target="_blank" class="stretched-link">Continue
+                                reading</a>
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img class="bd-placeholder-img" width="250" height="250" src="/CONTENT/17.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content3 -->
+    <div class="container">
+        <h2>World's best coding plateform</h2>
+        <img class="image" src="/CONTENT/2.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque veritatis, nulla nihil magnam dignissimos
+            optio est id modi atque tempora neque, eum dolores quis ratione facere quidem asperiores iste doloribus.
+            Fuga quidem velit numquam at, id ducimus est facere ipsam aut ab quas quo! Facere, dignissimos. Rerum, quasi
+            quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. A quo iste dolorum, veritatis sequi recusandae
+            itaque sapiente voluptate officia cumque accusamus, obcaecati tempore atque iure modi consectetur optio
+            dolor eum maiores qui. Nostrum doloribus facilis voluptas quam veritatis neque, nemo, facere nesciunt maxime
+            eos culpa vero. Facere labore possimus nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Porro placeat perferendis eius molestias consequatur earum rem quod? Voluptates aliquid reiciendis
+            doloremque esse magnam velit, sit magni rem ipsa, eius distinctio!</p>
+    </div>
+    <!-- content4 -->
+    <div class="container">
+        <h2>Web designer v/s Web designer</h2>
+        <video controls controlsList="nodownload" loop>
+            <source src="/CONTENT/web development vs web design.mp4">
+            Video is unsupported by your browser!
+        </video>
+    </div>
+    <!-- content5 -->
+    <div class="container">
+    </div>
+    <!-- footer -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="size text-center my-2">
+                <a href="https://www.facebook.com/sharma.santonu/">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="https://twitter.com/SharmaSantonu">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/great_sandi_">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <br>
+        <hr class="footer-line">
+        <div id="footer-bottom" class="clr">
+            <div id="footer-bottom-inner" class="container clr">
+                <div class="footer-bottom-flex clr">
+                    <div id="copyright" class="clr text-muted"> &copy; 2020 Diamond. All rights reserved.&nbsp;<a
+                            title="Privacy Policy" href="#" target="_blank">Privacy
+                            Policy</a>&nbsp;| <a title="Terms and Conditions" href="#" target="_blank">Site Terms &amp;
+                            Disclosures</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
